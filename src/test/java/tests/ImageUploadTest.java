@@ -13,7 +13,7 @@ public class ImageUploadTest extends BaseTest {
         PagesDriver.getHeader().submit();
 
         closeGooglePopUp();
-        PagesDriver.getSubmitPage().uploadImage("resources/Cat.jpg");
+        PagesDriver.getSubmitPage().uploadImage("Cat.jpg");
         Assert.assertTrue(PagesDriver.getSubmitPage().loadedVerification());
     }
 }

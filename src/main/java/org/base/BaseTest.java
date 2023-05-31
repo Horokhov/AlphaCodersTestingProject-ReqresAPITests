@@ -79,6 +79,6 @@ public class BaseTest {
         }}
 
     public String getFileByName(String name){
-        return new File("src/main/java/resources/"+name).getAbsolutePath();
+        return new File("src/main/resources/"+name).getAbsolutePath();
     }
 }
