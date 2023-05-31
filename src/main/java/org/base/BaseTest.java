@@ -19,7 +19,7 @@ public class BaseTest {
     public void initializeDriver() throws IOException {
 
         Properties properties = new Properties();
-        FileInputStream fis = new FileInputStream("C:\\Users\\max_h\\IdeaProjects\\AlphaCodersWebsiteTestingProject\\src\\main\\java\\resources\\GlobalData.properties");
+        FileInputStream fis = new FileInputStream("C:\\Users\\max_h\\IdeaProjects\\AlphaCodersTestingProject\\src\\main\\resources\\GlobalData.properties");
 
         properties.load(fis);
 
