@@ -1,0 +1,16 @@
+23:59:35 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+23:59:35 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685516375786_7820_1
+23:59:36 | INFO | WebDriverManager:966                     | Using chromedriver 113.0.5672.63 (resolved driver for Chrome 113)
+23:59:36 | INFO | WebDriverManager:1021                    | Exporting webdriver.chrome.driver as C:\Users\max_h\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+23:59:37 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+23:59:37 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+23:59:37 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+23:59:38 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.127 Platform=WINDOWS
+23:59:38 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+23:59:38 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+23:59:38 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (42ab6a667c8d3dead713477db68d8d84)
+23:59:47 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (42ab6a667c8d3dead713477db68d8d84)...
+23:59:47 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 235 ms
+23:59:47 | INFO | CloseDriverCommand:30                    | Close webdriver: 27 -> ChromeDriver: chrome on WINDOWS (null)...
+23:59:47 | INFO | CloseDriverCommand:32                    | Closed webdriver 27 in 1 ms
+23:59:47 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685516375786_7820_1

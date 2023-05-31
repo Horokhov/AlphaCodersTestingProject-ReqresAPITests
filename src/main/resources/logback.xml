@@ -1,0 +1,28 @@
+<configuration>
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} | %level | %-40(%logger{0}:%line) | %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="SIFT" class="ch.qos.logback.classic.sift.SiftingAppender">
+        <discriminator>
+            <key>fullclass</key>
+            <defaultValue>unknown</defaultValue>
+        </discriminator>
+        <sift>
+            <appender name="FILE-{fullclass}" class="ch.qos.logback.core.FileAppender">
+                <file>${user.dir}/Files/${fullclass}.log</file>
+                <append>false</append>
+                <encoder>
+                    <pattern>%d{HH:mm:ss} | %level | %-40(%logger{0}:%line) | %msg%n</pattern>
+                </encoder>
+            </appender>
+        </sift>
+    </appender>
+
+
+    <root level="INFO">
+        <appender-ref ref="Console"/>
+        <appender-ref ref="SIFT"/>
+    </root>
+</configuration>

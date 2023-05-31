@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="All Test Suite">
+    <test thread-count="5" name="NavBarTest">
+        <classes>
+            <class name="tests.NavigationHubTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="SocialLinksTest">
+        <classes>
+            <class name="tests.SocialLinksTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="CodersNetworkLinksTest">
+        <classes>
+            <class name="tests.CodersNetworkLinksTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="PopularContentLinksTest">
+        <classes>
+            <class name="tests.PopularContentLinksTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="PopularFanClubsLinksTest">
+        <classes>
+            <class name="tests.PopularFanClubsLinksTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="MainPageSearchTest">
+        <classes>
+            <class name="tests.MainPageSearchTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="FeaturedCreatorTest">
+        <classes>
+            <class name="tests.FeaturedCreatorTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="ImageUploadTest">
+        <classes>
+            <class name="tests.ImageUploadTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="DownloadWallpaperTest">
+        <classes>
+            <class name="tests.DownloadWallpaperTest"/>
+        </classes>
+    </test>
+
+</suite>
