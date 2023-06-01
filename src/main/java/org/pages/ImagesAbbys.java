@@ -1,19 +1,26 @@
 package org.pages;
 
 import com.codeborne.selenide.Condition;
+import org.base.PageTools;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class ImagesAbbys {
+public class ImagesAbbys extends PageTools {
+
+    private final By imageAbbysButton = By.xpath("//a[@class='btn btn-image btn-heavy']");
+
+    private final By imagesWord = By.xpath("//p[@class='header-white'][1]");
+
+    private final By abbysWord = By.xpath("//p[@class='header-white'][2]");
 
     public void goToImagesAbbys(){
-        $(By.xpath("//a[@class='btn btn-image btn-heavy']")).shouldBe(Condition.visible).click();
+       shouldBe(Condition.visible, imageAbbysButton).click();
     }
 
     public String getTitle(){
-        String images = $(By.xpath("//p[@class='header-white'][1]")).text();
-        String abbys = $(By.xpath("//p[@class='header-white'][2]")).text();
+        String images = getElementText(imagesWord);
+        String abbys = getElementText(abbysWord);
         String imagesAbbys = images+" "+abbys;
         return imagesAbbys;
     }

@@ -1,18 +1,21 @@
 package org.pages;
 
 import com.codeborne.selenide.Condition;
+import org.base.PageTools;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class MoviesAbbys {
+public class MoviesAbbys extends PageTools {
+    private final By moviesAbbysButton = By.xpath("//a[@class='btn btn-movie btn-heavy']");
 
+    private final By pageTitle = By.xpath("//h1[@class='title']");
     public void goToMoviesAbbys(){
-        $(By.xpath("//a[@class='btn btn-movie btn-heavy']")).shouldBe(Condition.visible).click();
+        shouldBe(Condition.visible, moviesAbbysButton).click();
     }
 
     public String getTitle(){
-        String title = $(By.xpath("//h1[@class='title']")).text();
+        String title = getElementText(pageTitle);
         return title;
     }
 }
