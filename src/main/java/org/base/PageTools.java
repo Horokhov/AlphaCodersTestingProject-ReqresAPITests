@@ -48,6 +48,11 @@ public class PageTools extends  CustomLogger{
         shouldBe(Condition.visible, by, args).hover();
     }
 
+    protected void scroll(By by, Object... args){
+        logInfo(getPreviousMethodNameAsText()+" ', element -> " + byLocator(by,args));
+        shouldBe(Condition.visible, by, args).scrollIntoView(true);
+    }
+
     protected void clickEnterKey(){
         Selenide.actions().sendKeys(Keys.ENTER).perform();
     }
@@ -67,7 +72,7 @@ public class PageTools extends  CustomLogger{
 
     public SelenideElement getElement(By by, Object... args){
         logInfo(getPreviousMethodNameAsText() + " ', element -> " + byLocator(by,args));
-        return shouldBe(Condition.visible, by, args);
+        return shouldBe(Condition.enabled, by, args);
     }
 
     public String getElementText(By by , Object... args){

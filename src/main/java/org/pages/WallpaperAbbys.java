@@ -1,5 +1,7 @@
 package org.pages;
 
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import org.base.BaseTest;
 import org.base.PageTools;
 import org.base.PagesDriver;
@@ -15,48 +17,72 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class WallpaperAbbys extends PageTools {
+    private final By wallpaperAbbysButton = By.xpath("//a[@class='btn btn-wallpaper btn-heavy']");
+
+    private final By wallpaperWord = By.xpath("//p[@class='header-white wallpaper-header']");
+
+    private final By abbysWord = By.xpath("//p[@class='header-white']");
+
+    private final By imagesAmount = By.xpath("//div[@class='col-xs-12 col-sm-4'][2]//a//span");
+
+    private final By categoriesAmount = By.xpath("//div[@class='col-xs-12 col-sm-4'][2]//a");
+
+    private final By searchTitle = By.xpath("//h1[@class='title']");
+
+    private final By picturesTitle = By.xpath("//div[@class='thumb-info']");
+
+    private final By downloadWallpaperShortcutButton = By.xpath("//a[@title='Download Wallpaper']");
+
+    private final By downloadWallpaperPageButton = By.xpath("//div[@class='boxgrid']//a");
+
+    private final By downloadFile = By.xpath("//a[contains(@id, 'download')]");
+
 
     public void  goToWallpaperAbbys(){
-        $(By.xpath("//a[@class='btn btn-wallpaper btn-heavy']")).shouldBe(Condition.visible).click();
+        shouldBe(Condition.visible, wallpaperAbbysButton).click();
     }
 
     public String getTitle(){
-        String wallpaper = $(By.xpath("//p[@class='header-white wallpaper-header']")).shouldBe(Condition.visible).text();
-        String abbys = $(By.xpath("//p[@class='header-white']")).shouldBe(Condition.visible).text();
+        String wallpaper = getElementText(wallpaperWord);
+        String abbys = getElementText(abbysWord);
         String wallpaperAbbys = wallpaper+" "+abbys;
         return wallpaperAbbys;
     }
 
-    public ElementsCollection getCategoriesImagesAmount(){
-        ElementsCollection amount = $$(By.xpath("//div[@class='col-xs-12 col-sm-4'][2]//a//span"));
+    public List<SelenideElement> getCategoriesImagesAmount(){
+        List<SelenideElement> amount = getElements(imagesAmount);
         return amount;
     }
 
-    public ElementsCollection goToCategoryAndGetImageAmount(){
-        ElementsCollection categories = $$(By.xpath("//div[@class='col-xs-12 col-sm-4'][2]//a"));
+    public List<SelenideElement> goToCategoryAndGetImageAmount(){
+        List<SelenideElement> categories = getElements(categoriesAmount);
         return categories;
     }
 
     public String getSearchTitle(){
-        String title = $(By.xpath("//h1[@class='title']")).text();
+        String title = getElementText(searchTitle);
         return title;
     }
 
     public List<String> getPicturesTitle(){
-        List<String> picTitles = $$(By.xpath("//div[@class='thumb-info']")).texts();
+        List<String> picTitles = getElementsText(picturesTitle);
         return picTitles;
     }
 
     public void downloadPictureUsingShortcut() throws FileNotFoundException {
-        $(By.xpath("//a[@title='Download Wallpaper']")).scrollIntoView(true);
+        getElement(downloadWallpaperPageButton).scrollIntoView(true);
         closeGooglePopUp();
-        File download = $(By.xpath("//a[@title='Download Wallpaper']")).download();
+
+        File download = getElement(downloadWallpaperShortcutButton).download();
     }
 
     public void downloadPictureUsingMainPage() throws FileNotFoundException {
-        $(By.xpath("//img[contains(@alt, 'Wallpaper')]")).scrollIntoView(true).click();
+        getElement(downloadWallpaperPageButton).scrollIntoView(true);
+        click(downloadWallpaperPageButton);
         closeGooglePopUp();
-        File download = $(By.xpath("//a[contains(@id, 'download')]")).download();
+
+        Selenide.sleep(3000);
+        File download = getElement(downloadFile).download();
     }
 
 

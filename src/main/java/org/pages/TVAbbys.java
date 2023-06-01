@@ -12,7 +12,7 @@ public class TVAbbys extends PageTools {
 
     private final By pageTitle = By.xpath("//h1[@class='title']");
     public void goToTvAbbys(){
-        shouldBe(Condition.visible, tvAbbysButton);
+        shouldBe(Condition.visible, tvAbbysButton).click();
     }
 
     public String getTitle(){

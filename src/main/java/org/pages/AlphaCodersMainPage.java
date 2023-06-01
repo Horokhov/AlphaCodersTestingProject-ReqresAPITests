@@ -75,7 +75,7 @@ public class AlphaCodersMainPage extends PageTools {
     }
 
     public void goToCreatorsWalls() throws InterruptedException {
-        mouseHover(creatorWallpapersButton);
+        scroll(creatorWallpapersButton);
         click(creatorWallpapersButton);
     }
 
@@ -90,7 +90,7 @@ public class AlphaCodersMainPage extends PageTools {
     }
 
     public void goToCreatorsImages() throws InterruptedException {
-        mouseHover(featuredCreatorImagesButton);
+        scroll(featuredCreatorImagesButton);
         click(featuredCreatorImagesButton);
     }
 

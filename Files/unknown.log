@@ -1,16 +1,54 @@
-00:01:50 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
-00:01:50 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685602910172_4580_1
-00:01:50 | INFO | WebDriverManager:966                     | Using chromedriver 113.0.5672.63 (resolved driver for Chrome 113)
-00:01:50 | INFO | WebDriverManager:1021                    | Exporting webdriver.chrome.driver as C:\Users\max_h\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
-00:01:52 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
-00:01:52 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
-00:01:52 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
-00:01:52 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
-00:01:52 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
-00:01:52 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
-00:01:52 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (2a2cd1fbc3e010adda612959d8ed89f5)
-00:01:59 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (2a2cd1fbc3e010adda612959d8ed89f5)...
-00:01:59 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 187 ms
-00:01:59 | INFO | CloseDriverCommand:30                    | Close webdriver: 27 -> ChromeDriver: chrome on WINDOWS (null)...
-00:01:59 | INFO | CloseDriverCommand:32                    | Closed webdriver 27 in 0 ms
-00:01:59 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685602910172_4580_1
+01:29:28 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+01:29:28 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685608168700_11880_1
+01:29:29 | INFO | WebDriverManager:966                     | Using chromedriver 113.0.5672.63 (resolved driver for Chrome 113)
+01:29:29 | INFO | WebDriverManager:1021                    | Exporting webdriver.chrome.driver as C:\Users\max_h\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+01:29:31 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+01:29:31 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+01:29:31 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+01:29:31 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+01:29:31 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+01:29:31 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+01:29:31 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (4b38888e25421beccf1aa60c802dd743)
+01:29:36 | INFO | AlphaCodersMainPage:22                   | Get featured creator name ', element -> By.xpath: //span[@class='feature-profile']//a[1]
+01:29:36 | INFO | AlphaCodersMainPage:22                   | Go to creators images ', element -> By.xpath: //div[@class='feature-bottom']//a[contains(text(), 'Images')]
+01:29:36 | INFO | AlphaCodersMainPage:22                   | Go to creators images ', element -> By.xpath: //div[@class='feature-bottom']//a[contains(text(), 'Images')]
+01:29:42 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (4b38888e25421beccf1aa60c802dd743)...
+01:29:42 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 215 ms
+01:29:42 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+01:29:42 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685608182261_11880_1
+01:29:43 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+01:29:43 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+01:29:43 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+01:29:43 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+01:29:43 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+01:29:43 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+01:29:43 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (e20f059a2769bda95f8aa116eed5188a)
+01:29:47 | INFO | AlphaCodersMainPage:22                   | Get featured creator name ', element -> By.xpath: //span[@class='feature-profile']//a[1]
+01:29:47 | INFO | AlphaCodersMainPage:22                   | Go to featured creator profile ', element -> By.xpath: //div[contains(@class, 'feature-artist')]
+01:29:47 | INFO | AlphaCodersMainPage:22                   | Go to featured creator profile ', element -> By.xpath: //span[@class='feature-profile']//a[1]
+01:29:49 | INFO | AlphaCodersMainPage:22                   | Get featured creator name in creator profile ', element -> By.xpath: //h1[@class='title']
+01:29:50 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (e20f059a2769bda95f8aa116eed5188a)...
+01:29:50 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 268 ms
+01:29:50 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+01:29:50 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685608190477_11880_1
+01:29:51 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+01:29:51 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+01:29:51 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+01:29:51 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+01:29:51 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+01:29:51 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+01:29:51 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (ad2875c7c1f07603f80360bd2663f63e)
+01:29:54 | INFO | AlphaCodersMainPage:22                   | Get featured creator name ', element -> By.xpath: //span[@class='feature-profile']//a[1]
+01:29:54 | INFO | AlphaCodersMainPage:22                   | Go to creators walls ', element -> By.xpath: //div[@class='feature-bottom']//a[contains(text(), 'Wallpapers')]
+01:29:54 | INFO | AlphaCodersMainPage:22                   | Go to creators walls ', element -> By.xpath: //div[@class='feature-bottom']//a[contains(text(), 'Wallpapers')]
+01:29:58 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (ad2875c7c1f07603f80360bd2663f63e)...
+01:29:58 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 195 ms
+01:29:58 | INFO | CloseDriverCommand:30                    | Close webdriver: 40 -> ChromeDriver: chrome on WINDOWS (null)...
+01:29:58 | INFO | CloseDriverCommand:32                    | Closed webdriver 40 in 0 ms
+01:29:58 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685608190477_11880_1
+01:29:58 | INFO | CloseDriverCommand:30                    | Close webdriver: 34 -> ChromeDriver: chrome on WINDOWS (null)...
+01:29:58 | INFO | CloseDriverCommand:30                    | Close webdriver: 27 -> ChromeDriver: chrome on WINDOWS (null)...
+01:29:58 | INFO | CloseDriverCommand:32                    | Closed webdriver 34 in 1 ms
+01:29:58 | INFO | CloseDriverCommand:32                    | Closed webdriver 27 in 1 ms
+01:29:58 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685608168700_11880_1
+01:29:58 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685608182261_11880_1
