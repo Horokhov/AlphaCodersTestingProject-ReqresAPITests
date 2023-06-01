@@ -51,5 +51,10 @@
             <class name="tests.LogOutTest"/>
         </classes>
     </test>
+    <test thread-count="5" name="RestTest">
+        <classes>
+            <class name="tests.RestTest"/>
+        </classes>
+    </test>
 
 </suite>
