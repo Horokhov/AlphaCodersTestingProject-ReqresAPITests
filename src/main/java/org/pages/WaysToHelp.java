@@ -1,18 +1,21 @@
 package org.pages;
 
 import com.codeborne.selenide.Condition;
+import org.base.PageTools;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class WaysToHelp {
+public class WaysToHelp extends PageTools {
+    private final By waysToHelpButton = By.xpath("//a[contains(text(),'Ways To Help!')]");
 
+    private final By pageTitle = By.xpath("//h1[@class='center title']");
     public void goToWaysToHelp(){
-        $(By.xpath("//a[contains(text(),'Ways To Help!')]")).shouldBe(Condition.visible).click();
+        shouldBe(Condition.visible, waysToHelpButton).click();
     }
 
     public String getTitle(){
-        String title = $(By.xpath("//h1[@class='center title']")).text();
+        String title = getElementText(pageTitle);
         return title;
     }
 }
