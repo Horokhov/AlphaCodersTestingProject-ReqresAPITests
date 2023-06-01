@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 
+import java.io.File;
 import java.time.Duration;
 import java.util.List;
 
@@ -80,6 +81,29 @@ public class PageTools extends  CustomLogger{
     public List<SelenideElement> getElements(By by, Object... args){
         logInfo(getPreviousMethodNameAsText() + " ', elements -> " + byLocator(by,args));
         return shouldBe(CollectionCondition.sizeGreaterThan(-1), by, args);
+    }
+
+    public void closeGooglePopUp(){
+
+        if(WebDriverRunner.getWebDriver().getCurrentUrl().contains("#google_vignette")){
+            Selenide.switchTo().frame("aswift_1");
+            Selenide.switchTo().frame("ad_iframe");
+
+            try {
+                $(By.id("dismiss-button")).click();
+            } catch (Exception e){
+                System.out.println("Ignoring the exception");
+            }
+
+        }}
+
+    public String getCurrentUrl(){
+        String url = WebDriverRunner.getWebDriver().getCurrentUrl();
+        return url;
+    }
+
+    public String getFileByName(String name){
+        return new File("src/main/resources/"+name).getAbsolutePath();
     }
 
 }

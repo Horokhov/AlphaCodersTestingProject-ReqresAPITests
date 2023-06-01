@@ -1,6 +1,7 @@
 package org.pages;
 
 import org.base.BaseTest;
+import org.base.PageTools;
 import org.base.PagesDriver;
 import com.codeborne.selenide.Condition;
 import org.openqa.selenium.By;
@@ -9,7 +10,7 @@ import java.io.File;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class Header extends BaseTest{
+public class Header extends PageTools {
     public void openNavigationalHub() {
         $(By.className("navbar-brand")).shouldBe(Condition.visible).click();
     }

@@ -1,12 +1,13 @@
 package tests;
 
 import org.base.BaseTest;
+import org.base.PageTools;
 import org.base.PagesDriver;
 import org.testng.annotations.Test;
 
 import java.io.FileNotFoundException;
 
-public class DownloadWallpaperTest extends BaseTest {
+public class DownloadWallpaperTest extends PageTools implements BaseTest{
 
     @Test(description = "Verification that an image can be downloaded over a shortcut")
     public void imageDownloadTest() throws FileNotFoundException {

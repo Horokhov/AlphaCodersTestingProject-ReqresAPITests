@@ -1,6 +1,7 @@
 package tests;
 
 import org.base.BaseTest;
+import org.base.PageTools;
 import org.base.PagesDriver;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -10,7 +11,7 @@ import java.util.List;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class MainPageSearchTest extends BaseTest {
+public class MainPageSearchTest extends PageTools implements BaseTest {
 
     @Test(description = "Verification that search output is giving results that were requested")
     public void aplhaCodersSearch(){

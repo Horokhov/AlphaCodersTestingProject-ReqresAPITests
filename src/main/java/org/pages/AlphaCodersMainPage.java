@@ -2,6 +2,7 @@ package org.pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.SelenideElement;
 import org.base.PageTools;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -19,14 +20,41 @@ import static org.jsoup.nodes.Entities.EscapeMode.base;
 public class AlphaCodersMainPage extends PageTools {
 
     private final By searchButton = By.xpath("//button[@class='btn-search-bar btn btn-default btn-lg']");
+    private final By  searchField = By.xpath("//input[@placeholder='Search Alpha Coders']");
+
+    private final By linksListSocial = By.xpath("//div[@class='list-group list-group-follow']//a");
+
+    private final By featuredCreatorLink = By.xpath("//div[contains(@class, 'feature-artist')]");
+
+    private final By featuredCreatorToProfile = By.xpath("//span[@class='feature-profile']//a[1]");
+
+    private final By creatorWallpapersButton = By.xpath("//div[@class='feature-bottom']//a[contains(text(), 'Wallpapers')]");
+
+    private final By featuredCreatorName = By.xpath("//span[@class='feature-profile']//a[1]");
+
+    private final By featuredCreatorNameInProfile = By.xpath("//h1[@class='title']");
+
+    private final By featuredCreatorImagesButton = By.xpath("//div[@class='feature-bottom']//a[contains(text(), 'Images')]");
+
+    private final By networkLinks = By.xpath("//div[@class='footer']//ul//li//a[contains(@href, '/')]");
+
+    private final By popularContentLinks = By.xpath("//div[@id='popular_collections']//ul//li//a");
+
+    private final By fanClubsLinks = By.xpath("//div[@class='row-with-preview-container']//div[@class='content-info center']//a");
+
+    private final By footer = By.xpath("//div[@class='footer']");
+
+    private final By popularContent = By.xpath("//h1[contains(text(), 'Popular Content')]");
+
+    private final By popularFanClubs = By.xpath("//h1[contains(text(), 'Popular Fan Clubs')]");
     public void searchAlphaCoder(String coderName){
-        $(By.xpath("//input[@placeholder='Search Alpha Coders']")).append(coderName);
+        type(coderName,searchField);
         click(searchButton);
     }
 
     public List<Integer> getSocialLinksCodes(String requestMethod) throws IOException {
 
-        ElementsCollection links = $$(By.xpath("//div[@class='list-group list-group-follow']//a"));
+        List<SelenideElement> links = getElements(linksListSocial);
 
         List<Integer> codes = new ArrayList<>();
         for (WebElement link : links) {
@@ -42,35 +70,33 @@ public class AlphaCodersMainPage extends PageTools {
     }
 
     public void goToFeaturedCreatorProfile(){
-        $(By.xpath("//div[contains(@class, 'feature-artist')]")).scrollIntoView(true);
-        $(By.xpath("//span[@class='feature-profile']//a[1]")).click();
+        mouseHover(featuredCreatorLink);
+        click(featuredCreatorToProfile);
     }
 
     public void goToCreatorsWalls() throws InterruptedException {
-        $(By.xpath("//div[@class='feature-bottom']//a[contains(text(), 'Wallpapers')]")).scrollIntoView(true);
-
-        $(By.xpath("//div[@class='feature-bottom']//a[contains(text(), 'Wallpapers')]")).click();
+        mouseHover(creatorWallpapersButton);
+        click(creatorWallpapersButton);
     }
 
     public String getFeaturedCreatorName(){
-        String name = $(By.xpath("//span[@class='feature-profile']//a[1]")).text();
+        String name = getElementText(featuredCreatorName);
         return name;
     }
 
     public String getFeaturedCreatorNameInCreatorProfile(){
-        String name = $(By.xpath("//h1[@class='title']")).text();
+        String name = getElementText(featuredCreatorNameInProfile);
         return name;
     }
 
     public void goToCreatorsImages() throws InterruptedException {
-        $(By.xpath("//div[@class='feature-bottom']//a[contains(text(), 'Images')]")).scrollIntoView(true);
-        Thread.sleep(3000);
-        $(By.xpath("//div[@class='feature-bottom']//a[contains(text(), 'Images')]")).click();
+        mouseHover(featuredCreatorImagesButton);
+        click(featuredCreatorImagesButton);
     }
 
     public List<Integer> alphaCodersNetworkLinks(String requestMethod) throws IOException {
 
-        ElementsCollection links = $$(By.xpath("//div[@class='footer']//ul//li//a[contains(@href, '/')]"));
+        List<SelenideElement> links = getElements(networkLinks);
 
         List<Integer> codes = new ArrayList<>();
         for (WebElement link : links) {
@@ -87,7 +113,7 @@ public class AlphaCodersMainPage extends PageTools {
 
     public List<Integer> popularContentLinks(String requestMethod) throws IOException {
 
-        ElementsCollection links = $$(By.xpath("//div[@id='popular_collections']//ul//li//a"));
+        List<SelenideElement> links = getElements(popularContentLinks);
 
         List<Integer> codes = new ArrayList<>();
         for (WebElement link : links) {
@@ -104,7 +130,7 @@ public class AlphaCodersMainPage extends PageTools {
 
     public List<Integer> popularFanClubsLinks(String requestMethod) throws IOException {
 
-        ElementsCollection links = $$(By.xpath("//div[@class='row-with-preview-container']//div[@class='content-info center']//a"));
+        List<SelenideElement> links = getElements(fanClubsLinks);
 
         List<Integer> codes = new ArrayList<>();
         for (WebElement link : links) {
@@ -120,14 +146,14 @@ public class AlphaCodersMainPage extends PageTools {
     }
 
     public void toFooterScroll(){
-        $(By.xpath("//div[@class='footer']")).hover();
+        mouseHover(footer);
     }
 
     public void toPopularContentScroll(){
-        $(By.xpath("//h1[contains(text(), 'Popular Content')]")).hover();
+        mouseHover(popularContent);
     }
 
     public void toPopularFanClubsScroll(){
-        $(By.xpath("//h1[contains(text(), 'Popular Fan Clubs')]")).hover();
+        mouseHover(popularFanClubs);
     }
 }

@@ -1,6 +1,7 @@
 package tests;
 
 import org.base.BaseTest;
+import org.base.PageTools;
 import org.base.PagesDriver;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
@@ -15,7 +16,7 @@ import org.testng.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
-public class NavigationHubTest extends BaseTest {
+public class NavigationHubTest extends PageTools implements BaseTest {
 
     @Test
     public void wallpaperBar() throws InterruptedException {

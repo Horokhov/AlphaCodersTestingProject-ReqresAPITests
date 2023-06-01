@@ -1,6 +1,7 @@
 package org.pages;
 
 import org.base.BaseTest;
+import org.base.PageTools;
 import org.base.PagesDriver;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
@@ -13,7 +14,7 @@ import java.util.List;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
-public class WallpaperAbbys extends BaseTest{
+public class WallpaperAbbys extends PageTools {
 
     public void  goToWallpaperAbbys(){
         $(By.xpath("//a[@class='btn btn-wallpaper btn-heavy']")).shouldBe(Condition.visible).click();

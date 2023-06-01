@@ -1,14 +1,16 @@
 package tests;
 
 import org.base.BaseTest;
+import org.base.PageTools;
 import org.base.PagesDriver;
+import org.jsoup.Connection;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class FeaturedCreatorTest extends BaseTest {
+public class FeaturedCreatorTest extends PageTools implements BaseTest {
 
     @Test(description = "Verification that link to the featured artist is redirecting to the profile of this artist")
     public void featuredCreatorTest(){

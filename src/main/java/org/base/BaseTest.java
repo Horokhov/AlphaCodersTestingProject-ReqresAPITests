@@ -14,9 +14,9 @@ import java.util.Properties;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class BaseTest {
+public interface BaseTest {
     @BeforeClass(alwaysRun = true, description = "Initializing WebDrivers")
-    public void initializeDriver() throws IOException {
+    public default void initializeDriver() throws IOException {
 
         Properties properties = new Properties();
         FileInputStream fis = new FileInputStream("C:\\Users\\max_h\\IdeaProjects\\AlphaCodersTestingProject\\src\\main\\resources\\GlobalData.properties");
@@ -49,36 +49,13 @@ public class BaseTest {
     }
 
     @BeforeMethod(alwaysRun = true, description = "Launching an application")
-    public void launchApplication(){
+    public default void launchApplication(){
         Selenide.open("https://alphacoders.com/");
     }
 
     @AfterMethod(alwaysRun = true, description = "Closing an application")
-    public void closeApplication(){
+    public default void closeApplication(){
         Selenide.clearBrowserCookies();
         Selenide.closeWebDriver();
-    }
-
-    public String getCurrentUrl(){
-        String url = WebDriverRunner.getWebDriver().getCurrentUrl();
-        return url;
-    }
-
-    public void closeGooglePopUp(){
-
-        if(WebDriverRunner.getWebDriver().getCurrentUrl().contains("#google_vignette")){
-            Selenide.switchTo().frame("aswift_1");
-            Selenide.switchTo().frame("ad_iframe");
-
-            try {
-                $(By.id("dismiss-button")).click();
-            } catch (Exception e){
-                System.out.println("Ignoring the exception");
-            }
-
-        }}
-
-    public String getFileByName(String name){
-        return new File("src/main/resources/"+name).getAbsolutePath();
     }
 }
