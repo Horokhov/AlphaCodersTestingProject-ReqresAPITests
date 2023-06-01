@@ -18,7 +18,7 @@
         <logback>1.2.3</logback>
         <allure.version>2.10.0</allure.version>
         <aspectj.version>1.9.6</aspectj.version>
-        <suiteXmlFile>src\main\resources\testSuites.xml</suiteXmlFile>
+        <suiteXmlFile>testXML/testng.xml</suiteXmlFile>
     </properties>
 
     <dependencies>
