@@ -1,21 +1,187 @@
-09:57:24 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
-09:57:24 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685638644673_8980_1
-09:57:25 | INFO | WebDriverManager:966                     | Using chromedriver 113.0.5672.63 (resolved driver for Chrome 113)
-09:57:25 | INFO | WebDriverManager:1021                    | Exporting webdriver.chrome.driver as C:\Users\max_h\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
-09:57:27 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
-09:57:27 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
-09:57:27 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
-09:57:28 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
-09:57:28 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
-09:57:28 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
-09:57:28 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (6519b5bbf4a517092227e8179556d959)
-09:57:31 | INFO | LogginationPage:22                       | Login ', element -> By.xpath: //a[@href='https://alphacoders.com/users/login']
-09:57:32 | INFO | LogginationPage:22                       | Login ', element -> By.xpath: //input[@name='username']
-09:57:32 | INFO | LogginationPage:22                       | Login ', element -> By.xpath: //input[@name='password']
-09:57:32 | INFO | LogginationPage:22                       | Login ', element -> By.xpath: //input[@type='submit']
-09:57:34 | INFO | Header:22                                | Log out ', element -> By.xpath: //a[contains(text(), 'Logout')]
-09:57:35 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (6519b5bbf4a517092227e8179556d959)...
-09:57:35 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 160 ms
-09:57:35 | INFO | CloseDriverCommand:30                    | Close webdriver: 27 -> ChromeDriver: chrome on WINDOWS (null)...
-09:57:35 | INFO | CloseDriverCommand:32                    | Closed webdriver 27 in 0 ms
-09:57:35 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685638644673_8980_1
+10:14:38 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+10:14:38 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639678216_10060_1
+10:14:38 | INFO | WebDriverManager:966                     | Using chromedriver 113.0.5672.63 (resolved driver for Chrome 113)
+10:14:38 | INFO | WebDriverManager:1021                    | Exporting webdriver.chrome.driver as C:\Users\max_h\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+10:14:41 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+10:14:41 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+10:14:41 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+10:14:41 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+10:14:41 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+10:14:41 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+10:14:41 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (1eb4a496a05f60466c0fd9f233d2dda9)
+10:14:47 | INFO | ArtAbbys:22                              | Get title ', element -> By.xpath: //p[@class='header-white'][1]
+10:14:49 | INFO | ArtAbbys:22                              | Get title ', element -> By.xpath: //p[@class='header-white'][2]
+10:14:49 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (1eb4a496a05f60466c0fd9f233d2dda9)...
+10:14:51 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 1148 ms
+10:14:51 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+10:14:51 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639691053_10060_1
+10:14:52 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+10:14:52 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+10:14:52 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+10:14:52 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+10:14:52 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+10:14:52 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+10:14:52 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (318280a45f9c5a024864f94b88e04793)
+10:14:56 | INFO | AvatarAbbys:22                           | Get title ', element -> By.xpath: //h1[@class='title main-title']
+10:14:59 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (318280a45f9c5a024864f94b88e04793)...
+10:15:00 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 1158 ms
+10:15:00 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+10:15:00 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639700432_10060_1
+10:15:01 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+10:15:01 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+10:15:01 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+10:15:01 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+10:15:01 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+10:15:01 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+10:15:01 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (2ec5f24792e5157b561a915c4247faf4)
+10:15:06 | INFO | DiscussionsAbbys:22                      | Get title ', element -> By.xpath: //p[@class='header-white wallpaper-header']
+10:15:07 | INFO | DiscussionsAbbys:22                      | Get title ', element -> By.xpath: //p[@class='header-white']
+10:15:07 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (2ec5f24792e5157b561a915c4247faf4)...
+10:15:07 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 612 ms
+10:15:07 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+10:15:07 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639707959_10060_1
+10:15:08 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+10:15:08 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+10:15:08 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+10:15:09 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+10:15:09 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+10:15:09 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+10:15:09 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (7453fdfb81993be46deda566e162bbe3)
+10:15:13 | INFO | GamesAbbys:22                            | Get title ', element -> By.xpath: //h1[@class='title']
+10:15:16 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (7453fdfb81993be46deda566e162bbe3)...
+10:15:17 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 1127 ms
+10:15:17 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+10:15:17 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639717636_10060_1
+10:15:18 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+10:15:18 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+10:15:18 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+10:15:18 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+10:15:18 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+10:15:18 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+10:15:18 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (5f8fe39c5975d99658adf724fd168437)
+10:15:23 | INFO | GifAbbys:22                              | Get title ', element -> By.xpath: //p[@class='header-white'][1]
+10:15:27 | INFO | GifAbbys:22                              | Get title ', element -> By.xpath: //p[@class='header-white'][2]
+10:15:27 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (5f8fe39c5975d99658adf724fd168437)...
+10:15:28 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 272 ms
+10:15:28 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+10:15:28 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639728156_10060_1
+10:15:28 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+10:15:28 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+10:15:28 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+10:15:29 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+10:15:29 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+10:15:29 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+10:15:29 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (9fda37f22de2f75d7f9d8b739eaf62ba)
+10:15:34 | INFO | ImagesAbbys:22                           | Get title ', element -> By.xpath: //p[@class='header-white'][1]
+10:15:37 | INFO | ImagesAbbys:22                           | Get title ', element -> By.xpath: //p[@class='header-white'][2]
+10:15:37 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (9fda37f22de2f75d7f9d8b739eaf62ba)...
+10:15:38 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 353 ms
+10:15:38 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+10:15:38 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639738195_10060_1
+10:15:39 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+10:15:39 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+10:15:39 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+10:15:39 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+10:15:39 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+10:15:39 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+10:15:39 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (7e301dea08385cea4851eab24aeb2ffa)
+10:15:46 | INFO | MobileAbbys:22                           | Get title ', element -> By.xpath: //h1[@class='title main-title']
+10:15:46 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (7e301dea08385cea4851eab24aeb2ffa)...
+10:15:46 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 170 ms
+10:15:46 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+10:15:46 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639746386_10060_1
+10:15:47 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+10:15:47 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+10:15:47 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+10:15:47 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+10:15:47 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+10:15:47 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+10:15:47 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (afb0175c61eafdab881af94bb5fb60c7)
+10:15:52 | INFO | MoviesAbbys:22                           | Get title ', element -> By.xpath: //h1[@class='title']
+10:15:52 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (afb0175c61eafdab881af94bb5fb60c7)...
+10:15:52 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 196 ms
+10:15:52 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+10:15:52 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639752868_10060_1
+10:15:53 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+10:15:53 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+10:15:53 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+10:15:53 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+10:15:53 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+10:15:53 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+10:15:53 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (b0cc9f9ba3143e900732ea86211bb2eb)
+10:15:58 | INFO | TVAbbys:22                               | Get title ', element -> By.xpath: //h1[@class='title']
+10:15:59 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (b0cc9f9ba3143e900732ea86211bb2eb)...
+10:15:59 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 396 ms
+10:15:59 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+10:15:59 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639759675_10060_1
+10:16:00 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+10:16:00 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+10:16:00 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+10:16:00 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+10:16:00 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+10:16:00 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+10:16:00 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (974257b69c359b1f806f7a62845ff4e7)
+10:16:05 | INFO | UsersActivity:22                         | Get title ', element -> By.xpath: //h1[@class='center title']
+10:16:06 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (974257b69c359b1f806f7a62845ff4e7)...
+10:16:06 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 195 ms
+10:16:06 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+10:16:06 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639766209_10060_1
+10:16:06 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+10:16:06 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+10:16:06 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+10:16:07 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+10:16:07 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+10:16:07 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+10:16:07 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (a1e77c28a31e81dc28be67cae5a3c622)
+10:16:12 | INFO | WallpaperAbbys:22                        | Get title ', element -> By.xpath: //p[@class='header-white wallpaper-header']
+10:16:13 | INFO | WallpaperAbbys:22                        | Get title ', element -> By.xpath: //p[@class='header-white']
+10:16:13 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (a1e77c28a31e81dc28be67cae5a3c622)...
+10:16:14 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 1139 ms
+10:16:14 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+10:16:14 | INFO | FileHelper:56                            | Creating folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639774934_10060_1
+10:16:15 | INFO | HttpClientTimeouts:81                    | Changed connectTimeout from 120000 to 60000
+10:16:15 | INFO | HttpClientTimeouts:82                    | Changed readTimeout from 10800000 to 120000
+10:16:15 | INFO | BrowserResizer:28                        | Set browser size to 1920x1080
+10:16:15 | INFO | WebDriverFactory:138                     | BrowserName=chrome Version=113.0.5672.129 Platform=WINDOWS
+10:16:15 | INFO | WebDriverFactory:79                      | Selenide v. 5.25.1
+10:16:15 | INFO | WebDriverFactory:132                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+10:16:15 | INFO | CreateDriverCommand:71                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on WINDOWS (b622d8af6ad745bbbf2b6142c7526214)
+10:16:21 | INFO | WaysToHelp:22                            | Get title ', element -> By.xpath: //h1[@class='center title']
+10:16:21 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on WINDOWS (b622d8af6ad745bbbf2b6142c7526214)...
+10:16:22 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 201 ms
+10:16:22 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639746386_10060_1
+10:16:22 | INFO | CloseDriverCommand:30                    | Close webdriver: 58 -> ChromeDriver: chrome on WINDOWS (null)...
+10:16:22 | INFO | CloseDriverCommand:32                    | Closed webdriver 58 in 0 ms
+10:16:22 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639738195_10060_1
+10:16:22 | INFO | CloseDriverCommand:30                    | Close webdriver: 76 -> ChromeDriver: chrome on WINDOWS (null)...
+10:16:22 | INFO | CloseDriverCommand:32                    | Closed webdriver 76 in 0 ms
+10:16:22 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639707959_10060_1
+10:16:22 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639752868_10060_1
+10:16:22 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639759675_10060_1
+10:16:22 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639728156_10060_1
+10:16:22 | INFO | CloseDriverCommand:30                    | Close webdriver: 46 -> ChromeDriver: chrome on WINDOWS (null)...
+10:16:22 | INFO | CloseDriverCommand:32                    | Closed webdriver 46 in 0 ms
+10:16:22 | INFO | CloseDriverCommand:30                    | Close webdriver: 64 -> ChromeDriver: chrome on WINDOWS (null)...
+10:16:22 | INFO | CloseDriverCommand:32                    | Closed webdriver 64 in 1 ms
+10:16:22 | INFO | CloseDriverCommand:30                    | Close webdriver: 82 -> ChromeDriver: chrome on WINDOWS (null)...
+10:16:22 | INFO | CloseDriverCommand:32                    | Closed webdriver 82 in 1 ms
+10:16:22 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639717636_10060_1
+10:16:22 | INFO | CloseDriverCommand:30                    | Close webdriver: 88 -> ChromeDriver: chrome on WINDOWS (null)...
+10:16:22 | INFO | CloseDriverCommand:32                    | Closed webdriver 88 in 1 ms
+10:16:22 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639700432_10060_1
+10:16:22 | INFO | CloseDriverCommand:30                    | Close webdriver: 94 -> ChromeDriver: chrome on WINDOWS (null)...
+10:16:22 | INFO | CloseDriverCommand:32                    | Closed webdriver 94 in 2 ms
+10:16:22 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639691053_10060_1
+10:16:22 | INFO | CloseDriverCommand:30                    | Close webdriver: 70 -> ChromeDriver: chrome on WINDOWS (null)...
+10:16:22 | INFO | CloseDriverCommand:32                    | Closed webdriver 70 in 1 ms
+10:16:22 | INFO | CloseDriverCommand:30                    | Close webdriver: 40 -> ChromeDriver: chrome on WINDOWS (null)...
+10:16:22 | INFO | CloseDriverCommand:32                    | Closed webdriver 40 in 0 ms
+10:16:22 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639766209_10060_1
+10:16:22 | INFO | CloseDriverCommand:30                    | Close webdriver: 52 -> ChromeDriver: chrome on WINDOWS (null)...
+10:16:22 | INFO | CloseDriverCommand:32                    | Closed webdriver 52 in 0 ms
+10:16:22 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639678216_10060_1
+10:16:22 | INFO | CloseDriverCommand:30                    | Close webdriver: 34 -> ChromeDriver: chrome on WINDOWS (null)...
+10:16:22 | INFO | CloseDriverCommand:32                    | Closed webdriver 34 in 0 ms
+10:16:22 | INFO | CloseDriverCommand:30                    | Close webdriver: 27 -> ChromeDriver: chrome on WINDOWS (null)...
+10:16:22 | INFO | CloseDriverCommand:32                    | Closed webdriver 27 in 0 ms
+10:16:22 | INFO | FileHelper:81                            | Deleted empty folder: C:\Users\max_h\IdeaProjects\AlphaCodersTestingProject\build\downloads\1685639774934_10060_1
