@@ -46,5 +46,10 @@
             <class name="tests.DownloadWallpaperTest"/>
         </classes>
     </test>
+    <test thread-count="5" name="LogOutTest">
+        <classes>
+            <class name="tests.LogOutTest"/>
+        </classes>
+    </test>
 
 </suite>
