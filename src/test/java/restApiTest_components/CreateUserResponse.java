@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import restApiTest_components.utils.DataDeserializer;
 
 import java.time.LocalDateTime;
 
@@ -17,6 +18,6 @@ public class CreateUserResponse {
     private String id;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
-    @JsonDeserialize(using = )
+    @JsonDeserialize(using = DataDeserializer.class)
     private LocalDateTime createdAt;
 }
