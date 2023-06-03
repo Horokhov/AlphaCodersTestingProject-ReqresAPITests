@@ -1,5 +1,6 @@
 package tests;
 
+import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import restApiTest_components.*;
@@ -84,6 +85,24 @@ public class RestApiTests {
     }
 
     @Test
+    public void loginUser(){
+        Specifications.getSpecifications(Specifications.requestSpecification(baseUrl),Specifications.responseSpecification(200));
+
+        String token = "QpwL5tke4Pnpja7X4";
+
+        RegisterRequest request = new RegisterRequest("eve.holt@reqres.in","cityslicka");
+
+        LoginResponse response = given()
+                .body(request)
+                .when()
+                .post("/api/login")
+                .then().log().all()
+                .extract().as(LoginResponse.class);
+
+        Assert.assertEquals(token, response.getToken());
+    }
+
+    @Test
     public void updateUser(){
         Specifications.getSpecifications(Specifications.requestSpecification(baseUrl),Specifications.responseSpecification(200));
 
@@ -100,5 +119,33 @@ public class RestApiTests {
 
         Assert.assertEquals(request.getName(),response.getName());
         Assert.assertEquals(request.getJob(),response.getJob());
+    }
+
+    @Test
+    public void patchUser(){
+        Specifications.getSpecifications(Specifications.requestSpecification(baseUrl),Specifications.responseSpecification(200));
+
+        UpdateUserRequest request = new UpdateUserRequest("morpheus","zion resident");
+
+        UpdateUserResponse response = given()
+                .body(request)
+                .when()
+                .patch("/api/users/2")
+                .then().log().all()
+                .extract().as(UpdateUserResponse.class);
+
+        Assert.assertEquals(request.getName(), response.getName());
+        Assert.assertEquals(request.getJob(), response.getJob());
+    }
+
+    @Test
+    public void deleteUser(){
+        Specifications.getSpecifications(Specifications.requestSpecification(baseUrl),Specifications.responseSpecification(204));
+
+        Response response = given()
+                .when()
+                .delete("/api/users/2")
+                .then().log().all()
+                .extract().response();
     }
 }
