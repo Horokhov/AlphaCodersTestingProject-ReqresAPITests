@@ -1,6 +1,5 @@
 package tests;
 
-import io.restassured.http.ContentType;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import restApiTest_components.*;
@@ -9,7 +8,7 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
-public class TestClass {
+public class RestApiTests {
     private static final String baseUrl = "https://reqres.in/";
 
     @Test
@@ -22,9 +21,27 @@ public class TestClass {
                 .extract().body().jsonPath().getList("data", UserData.class);
 
         for (UserData datum : data) {
-            Assert.assertTrue(datum.getAvatar().contains(datum.getId().toString()));
+            Assert.assertTrue(datum.getAvatar().contains(String.valueOf(datum.getId())));
             Assert.assertTrue(datum.getEmail().contains("@reqres.in"));
         }
+    }
+
+    @Test
+    public void getSingleUser(){
+        Specifications.getSpecifications(Specifications.requestSpecification(baseUrl), Specifications.responseSpecification(200));
+        int id=2;
+        UserData response = given()
+                .when()
+                .get("/api/users/2")
+                .then()
+                .log().all()
+                .extract()
+                .body().jsonPath().getObject("data", UserData.class);
+
+        Assert.assertEquals(id,response.getId());
+        Assert.assertTrue(response.getEmail().contains("@reqres.in"));
+        Assert.assertTrue(!response.getFirst_name().isEmpty());
+        Assert.assertTrue(!response.getLast_name().isEmpty());
     }
 
     @Test
@@ -83,6 +100,5 @@ public class TestClass {
 
         Assert.assertEquals(request.getName(),response.getName());
         Assert.assertEquals(request.getJob(),response.getJob());
-
     }
 }
