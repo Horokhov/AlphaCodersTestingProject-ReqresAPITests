@@ -61,5 +61,15 @@
             <class name="tests.RestApiTests"/>
         </classes>
     </test>
+    <test thread-count="5" name="WaysToHelpMerchTest">
+        <classes>
+            <class name="tests.WaysToHelpMerchTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="ArtAbbysAllLinksTest">
+        <classes>
+            <class name="tests.ArtAbbysAllLinksTest"/>
+        </classes>
+    </test>
 
 </suite>
